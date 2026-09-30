@@ -48,6 +48,48 @@
 
 		}
 
+
+@media screen and (min-width: 1025px) {
+#splan  {
+  
+  font-family: 'Orbitron', sans-serif;
+ 
+  margin: 0;
+  padding: 0;
+  float:none;
+  font-size: 30px;
+  font-size: 12rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; 
+}	
+#splan {
+  
+  background-image: url("../images/dbutler.png");
+
+  
+  min-height: 100vh;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
+  background-size: cover;
+
+  
+  background-attachment: fixed;
+}
+
+
+		}
+
+
+
+
 body {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 
