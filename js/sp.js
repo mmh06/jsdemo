@@ -29,7 +29,7 @@ function messageNonMobile(){
    mb.color= "black";
    mb.padding= "15px";
    
-   mb.text-align= center;
+   mb.textAlign= "center";
    mb.textContent= "Nice!Not Mobile=Enjoy the cool css.";
 
 }
