@@ -1,16 +1,43 @@
-
-@media screen and (min-width: 800px) {
-				#splan {
+#splan {
 					margin: 1%;
 					height: 100px;
 					width: 18%;
 					float: left;
 				}
-				#splan {
+#splan {
 					background-image: none;
 				}
+@media screen and (min-width: 800px) {
+#splan {
+  
+  font-family: 'Orbitron', sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  color: white;
+  -webkit-text-stroke: 2px #ff4500; 
+}	
+#splan {
+  
+  background-image: url("../images/dbutler.png");
+
+  
+  min-height: 100vh;
+
+  
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
+  background-size: cover;
+
+  
+  background-attachment: fixed;
+}
 
 		}
+
 body {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 
@@ -246,33 +273,7 @@ h3 {
 
 
 
-#splan {
-  
-  font-family: 'Orbitron', sans-serif;
-  color: #333333;
-  margin: 0;
-  padding: 0;
-  font-size: 48px;
-  color: white;
-  -webkit-text-stroke: 2px #ff4500; 
-}
-#splan {
-  
-  background-image: url("../images/dbutler.png");
 
-  
-  min-height: 100vh;
-
-  
-  background-position: center;
-  background-repeat: no-repeat;
-
-  
-  background-size: cover;
-
-  
-  background-attachment: fixed;
-}
 
 #splan li {
   margin:3px;
