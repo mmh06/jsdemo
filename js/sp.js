@@ -25,11 +25,10 @@ displayMessage(mediaQuery);
 function messageNonMobile(){
    const mb = document.getElementById("message-box")
      mb.style.display = "block";
-     mb.background-color= #ffcccc;
+     mb.backgroundColor = #ffcccc;
    mb.color= #cc0000;
-   mb.padding= 15px;
-   mb.border= 1px solid #cc0000;
-   mb.border-radius= 5px;
+   mb.padding= "15px";
+   
    mb.text-align= center;
    mb.textContent= "Nice!Not Mobile=Enjoy the cool css.";
 
