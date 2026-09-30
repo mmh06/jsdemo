@@ -56,8 +56,8 @@
 	font-weight:900;
     font-size: 2rem;
     
-    text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
-    animation: shadow-dance 6s infinite
+    text-shadow: 10px 10px 0 #ff005e, 20px 20px 0 #00d4ff;
+    animation: shadow-dance 9s infinite
 }
 @keyframes shadow-dance {
     0%, 100% {
