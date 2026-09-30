@@ -26,12 +26,12 @@ function messageNonMobile(){
    const mb = document.getElementById("message-box");
      mb.style.display = "flex";
 mb.style.justifyContent = "center";
-     mb.backgroundColor = "yellow";
-   mb.color= "black";
-   mb.padding= "15px";
+     mb.style.backgroundColor = "yellow";
+   mb.style.color= "black";
+   mb.style.padding= "15px";
    
-   mb.textAlign= "center";
-   mb.textContent= "Nice!Not Mobile=Enjoy the cool css.";
+   mb.style.textAlign= "center";
+   mb.style.textContent= "Nice!Not Mobile=Enjoy the cool css.";
 
 }
 function messageMobile(){
