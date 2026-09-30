@@ -53,6 +53,7 @@
 #splan  {
     font-family: 'Impact', 'Arial Black', system-ui;
 	color: #006400;
+	font-weight:900;
     font-size: 1rem;
     
     text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
