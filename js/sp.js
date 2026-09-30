@@ -30,3 +30,30 @@ function messageMobile() {
   mb.textContent = "Boo!Mobile:Trading cool css for speed and low data usage.";
   mb.style.fontFamily = "Verdana, sans-serif";
 }
+
+const mq = window.matchMedia('(min-width: 1025px)');
+function dm(e)  {
+  //shows different dialogue for different device types
+  if (e.matches)  {
+    // display message for non mobile device
+    console.log("Definitely a desktop");
+    messageDesktop();
+  } else  {
+    /*dislay code for probable mobile device
+    console.log("Most probably a mobie device based on th browser width.");
+    messageMobile();*/
+  }
+}
+// coding for  the listener to detect screen resizing
+mq.addEventListener('change', dm);
+// Run the function on page start
+dm(mq);
+function messageDesktop() {
+  const mb = document.getElementById("message-box");
+  mb.style.display = "block";
+  mb.style.textAlign = "center";
+  mb.style.backgroundColor = "yellow";
+  mb.style.color= "black";
+  mb.style.padding= "5px";
+  mb.textContent = "Feel the power of desktop";
+}
