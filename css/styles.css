@@ -52,20 +52,20 @@
 @media screen and (min-width: 1025px) {
 #splan  {
   
-  font-family: 'Orbitron', sans-serif;
- 
-  margin: 0;
-  padding: 0;
-  float:none;
-  font-size: 24px;
-  /*font-size: 3rem;*/
-  font-weight: 500;
-  background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent; 
-}	
+   font-size: 2rem;
+    color: #fff;
+    text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+    animation: shadow-dance 2s infinite
+}
+@keyframes shadow-dance {
+    0%, 100% {
+        text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+    }
+    50% {
+        text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
+    }
+}
+
 #splan {
   
   background-image: url("../images/dbutler.png");
