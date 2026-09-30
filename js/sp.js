@@ -31,7 +31,7 @@ function messageNonMobile(){
    mb.border: 1px solid #cc0000;
    mb.border-radius: 5px;
    mb.text-align: center;
-   mb.textContent = "Nice!Not Mobile:Enjoy the cool css.";
+   mb.textContent: "Nice!Not Mobile:Enjoy the cool css.";
 
 }
 function messageMobile(){
