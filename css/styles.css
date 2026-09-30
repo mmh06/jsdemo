@@ -57,9 +57,9 @@
   margin: 0;
   padding: 0;
   float:none;
-  font-size: 10px;
-  font-size: 3rem;
-  font-weight: 900;
+  font-size: 24px;
+  /*font-size: 3rem;*/
+  font-weight: 500;
   background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
