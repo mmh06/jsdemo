@@ -29,7 +29,8 @@ mb.style.justifyContent = "center";
      mb.style.backgroundColor = "yellow";
    mb.style.color= "black";
    mb.style.padding= "15px";
-   mb.style.textContent= "Nice!Not Mobile=Enjoy the cool css.";
+  document.getElementById("message-box").textContent = "Nice!Not Mobile::Enjoy the cool css.";
+  
 
 }
 function messageMobile(){
