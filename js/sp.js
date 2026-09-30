@@ -25,7 +25,7 @@ displayMessage(mediaQuery);
 function messageNonMobile(){
    const mb = document.getElementById("message-box")
      mb.style.display = "block";
-     mb.backgroundColor = #ffcccc;
+     mb.backgroundColor = "#ffcccc";
    mb.color= #cc0000;
    mb.padding= "15px";
    
