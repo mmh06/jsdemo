@@ -1,5 +1,16 @@
 
+@media screen and (min-width: 800px) {
+				#splan {
+					margin: 1%;
+					height: 100px;
+					width: 18%;
+					float: left;
+				}
+				#splan {
+					background-image: none;
+				}
 
+		}
 body {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 
