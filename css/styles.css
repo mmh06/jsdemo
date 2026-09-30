@@ -55,7 +55,7 @@
 	color: #0000FF;
 	font-weight:900;
     font-size: 2rem;
-    
+    letter-spacing: 2px;
     text-shadow: 10px 10px 0 #ff005e, 20px 20px 0 #00d4ff;
     animation: shadow-dance 9s infinite
 }
