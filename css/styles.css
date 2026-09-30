@@ -27,7 +27,7 @@
   color: white;
   -webkit-text-stroke: 2px #ff4500; 
 }	
-#splan {
+#splan > :not(#message-box){
   
   background-image: url("../images/dbutler.png");
 
