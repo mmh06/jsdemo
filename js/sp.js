@@ -1,5 +1,5 @@
 
-const mediaQuery = window.matchMedia('(min-width: 500px)');
+const mediaQuery = window.matchMedia('(min-width: 350px)');
 
 function displayMessage(e) {
   //shows different dialogue for different device types 
