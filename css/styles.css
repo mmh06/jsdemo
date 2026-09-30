@@ -1,4 +1,4 @@
-.message-box {
+#message-box {
   display: none; 
   
 }
@@ -16,7 +16,7 @@
 					background-image: none;
 				}
 @media screen and (min-width: 350px) {
-#splan {
+#splan > :not(#message-box) {
   
   font-family: 'Orbitron', sans-serif;
   color: #333333;
