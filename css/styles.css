@@ -1,11 +1,6 @@
 .message-box {
   display: none; 
-  background-color: #ffcccc;
-  color: #cc0000;
-  padding: 15px;
-  border: 1px solid #cc0000;
-  border-radius: 5px;
-  text-align: center;
+  
 }
 
 #splan {
