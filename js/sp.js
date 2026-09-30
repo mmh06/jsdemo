@@ -18,7 +18,7 @@ displayMessage(mediaQuery);
 function messageNonMobile() {
   const mb = document.getElementById("message-box");
   mb.style.display = "block";
-  mb.style.justifyContent = "center";
+  mb.style.textAlign = "center";
   mb.style.backgroundColor = "yellow";
   mb.style.color= "black";
   mb.style.padding= "5px";
