@@ -23,7 +23,7 @@ displayMessage(mediaQuery);
 
 
 function messageNonMobile(){
-   const mb = document.getElementById("message-box")
+   const mb = document.getElementById("message-box");
      mb.style.display = "flex";
 mb.style.justifyContent = "center";
      mb.backgroundColor = "yellow";
