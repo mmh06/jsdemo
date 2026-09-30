@@ -18,16 +18,17 @@ function displayMessage(e) {
 mediaQuery.addEventListener('change', displayMessage);
 
 // Run the function on page start
-handleScreenChange(mediaQuery);
+displayMessage(mediaQuery);
 
 
 
 function messageNonMobile(){
-
+   document.getElementById("message-box").style.display = "block";
   document.getElementById("message-box").textContent = "Hello! This is probably not a mobile device .";
 
 }
 function messageMobile()
+ document.getElementById("message-box").style.display = "block";
  document.getElementById("message-box").textContent = "Hello! This is probably a mobile device .";
 
 }
