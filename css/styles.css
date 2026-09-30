@@ -14,6 +14,7 @@
   color: #333333;
   margin: 0;
   padding: 0;
+  float:none;
   font-size: 48px;
   color: white;
   -webkit-text-stroke: 2px #ff4500; 
