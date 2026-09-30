@@ -52,10 +52,10 @@
 @media screen and (min-width: 1025px) {
 #splan  {
     font-family: 'Impact', 'Arial Black', system-ui;
-	color: #0000FF;
-	font-weight:900;
+	color: purple;
+	font-weight:450;
     font-size: 2rem;
-    letter-spacing: 2px;
+    
     text-shadow: 10px 10px 0 #ff005e, 20px 20px 0 #00d4ff;
     animation: shadow-dance 9s infinite
 }
