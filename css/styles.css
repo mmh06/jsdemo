@@ -3,6 +3,8 @@
 					height: 100px;
 					width: 100%;
 					font-size: 12px;
+					font-family: Verdana, Geneva, sans-serif; 
+					line-height: 1.5;
 					/*float: left;*/
 				}
 #splan {
