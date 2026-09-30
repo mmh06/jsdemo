@@ -22,5 +22,12 @@ handleScreenChange(mediaQuery);
 
 
 
-function messageNonMobile(){  }
-function messageNonMobile()() { }
+function messageNonMobile(){
+
+  document.getElementById("message-box").textContent = "Hello! This is probably not a mobile device .";
+
+}
+function messageMobile()
+ document.getElementById("message-box").textContent = "Hello! This is probably a mobile device .";
+
+}
