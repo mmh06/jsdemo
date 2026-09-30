@@ -29,8 +29,6 @@ mb.style.justifyContent = "center";
      mb.style.backgroundColor = "yellow";
    mb.style.color= "black";
    mb.style.padding= "15px";
-   
-   mb.style.textAlign= "center";
    mb.style.textContent= "Nice!Not Mobile=Enjoy the cool css.";
 
 }
