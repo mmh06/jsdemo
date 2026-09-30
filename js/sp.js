@@ -24,11 +24,11 @@ displayMessage(mediaQuery);
 
 function messageNonMobile(){
    document.getElementById("message-box").style.display = "block";
-  document.getElementById("message-box").textContent = "Hello! This is probably not a mobile device .";
+  document.getElementById("message-box").textContent = "Nice!Not Mobile:Enjoy the cool css.";
 
 }
 function messageMobile(){
  document.getElementById("message-box").style.display = "block";
- document.getElementById("message-box").textContent = "Hello! This is probably a mobile device .";
+ document.getElementById("message-box").textContent = "Boo!Mobile:Trading cool css for speed and low data usage.";
 
 }
