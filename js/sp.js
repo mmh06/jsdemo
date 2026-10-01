@@ -127,7 +127,20 @@ if (currentFile === "m.html")    {
         lati = highestQuake[1];
         lang =  highestQuake[0];
         console.table(highestQuake);
-        addMarkerToMap(lati,lang)
+        addMarkerToMap(lati,lang);
+        const radiusInKm = 500; 
+
+// Create the circle overlay
+const cityCircle = new google.maps.Circle({
+  strokeColor: '#FF0000',
+  strokeOpacity: 0.8,
+  strokeWeight: 2,
+  fillColor: '#FF0000',
+  fillOpacity: 0.35,
+  map: dmap, // Your initialized google.maps.Map instance
+  center: { lat: 32.7767, lng: -96.7970 }, // Center latitude and longitude
+  radius: radiusInKm * 1000 // Convert km to meters
+});
         return   {
           magnitude: highestQuake.mag,
           place: highestQuake.place,
