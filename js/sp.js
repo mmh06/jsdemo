@@ -126,6 +126,7 @@ if (currentFile === "m.html")  {
       return {
         magnitude: highestQuake.mag,
         place: highestQuake.place,
+        cord: highestQuake.coordinates,
         time: new Date(highestQuake.time).toLocaleString()
       };
     } else {
