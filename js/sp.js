@@ -196,7 +196,7 @@ if (currentFile === "m.html") {
       }
       ,
       title: "My Marker Location",
-      content: pinText
+      content: customPin
     }
     );
     /* 4. Append the marker to the <gmp-map> element
