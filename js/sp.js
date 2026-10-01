@@ -155,7 +155,9 @@ if (currentFile === "m.html") {
         lati = highestQuake[1];
         lang = highestQuake[0];
         console.table(highestQuake);
-        addMarkerToMap(lati, lang, "Nearest strongest eartquake");
+        place = data.features[0].place;
+        place = place+ "Nearest strongest eartquake";
+        addMarkerToMap(lati, lang, place);
         return {
           magnitude: highestQuake.mag,
           place: highestQuake.place,
