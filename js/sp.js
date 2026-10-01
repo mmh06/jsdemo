@@ -114,7 +114,7 @@ mapElement = new google.maps.Map(document.getElementById('dmap'), {
   });
 
 // 2. Add the red border circle
-let rad = radius*1000;
+let rad = radius;
 const redCircle = new google.maps.Circle({
   strokeColor: "#FF0000",   // Red border outline
   strokeOpacity: 0.8,       // Opacity of the border
