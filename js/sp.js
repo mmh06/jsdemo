@@ -64,17 +64,7 @@ if (currentFile === "startupplan.html")   {
 }
 if (currentFile === "m.html")   {
   console.log("This code only runs on m.html");
-  const mapElement = document.getElementById('dmap');
-  const innerMap = mapElement.innerMap;
-  // 3. Add the Google Maps event listener to the inner map
-  innerMap.addListener('click', (event) =>  {
-    // 4. Extract the latitude and longitude from the event
-    const lat = event.latLng.lat();
-    const lng = event.latLng.lng();
-    console.log(`Latitude: ${lat}, Longitude: ${lng}`);
-    getHighestEarthquake(lat,lng, 100).then(result => console.log(result));
-  }
-  );
+
   // 1. Check if the Geolocation API is supported by the browser
   if ("geolocation" in navigator)   {
     // 2. Request the current position
