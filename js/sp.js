@@ -155,8 +155,10 @@ if (currentFile === "m.html") {
         lati = highestQuake[1];
         lang = highestQuake[0];
         console.table(data.features[0]);
-        place = data.features[0].place;
-        place = place+ "Nearest strongest eartquake";
+        place = data.features[0].properties.place;
+        place = place+ "(U+1F6D8)";
+         place = place+ "of magnitude"+data.features[0].mag;
+
         addMarkerToMap(lati, lang, place);
         return {
           magnitude: highestQuake.mag,
