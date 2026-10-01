@@ -190,6 +190,19 @@ const redCircle = new google.maps.Circle({
     }
     );
     // 4. Append the marker to the <gmp-map> element
+    // 2. Create the circle
+const circle = new google.maps.Circle({
+    map: me,
+    radius: 1000,    // Radius in meters (e.g., 1 km)
+    fillColor: '#FF0000',
+    fillOpacity: 0.35,
+    strokeColor: '#FF0000',
+    strokeOpacity: 0.8,
+    strokeWeight: 2
+});
+
+// 3. Bind the circle's center to the marker's position
+circle.bindTo('center', marker, 'position');
     me.append(marker);
     
     
