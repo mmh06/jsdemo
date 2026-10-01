@@ -64,6 +64,7 @@ if (currentFile === "startupplan.html")  {
 }
 if (currentFile === "m.html")  {
   console.log("This code only runs on m.html");
+  
   // 1. Check if the Geolocation API is supported by the browser
   if ("geolocation" in navigator)  {
     // 2. Request the current position
@@ -123,7 +124,10 @@ if (currentFile === "m.html")  {
     
     if (data.features && data.features.length > 0) {
       const highestQuake = data.features[0].geometry.coordinates;
+      lati = highestQuake[0];
+      lang =  highestQuake[1];
       console.table(highestQuake);
+       addMarkerToMap(lati,lang)
       return {
         magnitude: highestQuake.mag,
         place: highestQuake.place,
@@ -144,6 +148,21 @@ if (currentFile === "m.html")  {
 
 
 
+async function addMarkerToMap(lati,lang) {
+  // 1. Select the gmp-map element by ID
+  const mapElement = document.getElementById('dmap');
 
+  // 2. Load the marker library
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  // 3. Create the advanced marker instance
+  const marker = new AdvancedMarkerElement({
+    position: { lat: lati, lng: lang },
+    title: "My Marker Location"
+  });
+
+  // 4. Append the marker to the <gmp-map> element
+  mapElement.append(marker);
+}
     
 }
