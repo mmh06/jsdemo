@@ -198,7 +198,7 @@ const redCircle = new google.maps.Circle({
   strokeWeight: 2,
   fillColor: "#FF0000",
   fillOpacity: 0.35,
-  map: me,
+  map: mapElement,
   center: position, // Matches the marker position directly
   radius: 1000      // Radius in meters
 });
