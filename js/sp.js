@@ -1,4 +1,5 @@
 // Get the current HTML file name
+ let mapElement;
 const currentFile = window.location.pathname.split("/").pop();
 // Only execute code if the user is on "startupplan.html"
 if (currentFile === "startupplan.html")     {
@@ -63,7 +64,7 @@ if (currentFile === "startupplan.html")     {
   }
 }
 if (currentFile === "m.html")     {
-  let mapElement;
+ 
   console.log("This code only runs on m.html");
   // 1. Check if the Geolocation API is supported by the browser
   if ("geolocation" in navigator)     {
@@ -83,8 +84,9 @@ if (currentFile === "m.html")     {
         lat: latitude, lng: longitude
       }
       );
-      innerMap.setZoom(04);
+      innerMap.setZoom(4);
       addMarkerToMap(latitude,longitude);
+      redCirc(latitude,longitude,500);
       getHighestEarthquake(latitude,longitude, 500).then(result => console.log(result));
       innerMap.addListener('click', (event) =>    {
         // 4. Extract the latitude and longitude from the event
@@ -103,6 +105,29 @@ if (currentFile === "m.html")     {
     );
   } else     {
     console.error("Geolocation is not supported by this browser.");
+  }
+  async function redCirc(lati,long,radius){
+    // 1. Initialize the map centered on your coordinate
+mapElement = new google.maps.Map(document.getElementById('dmap'), {
+    center: { lat: 38.7946, lng:106.5348 },
+    zoom: 4,
+  });
+
+// 2. Add the red border circle
+const redCircle = new google.maps.Circle({
+  strokeColor: "#FF0000",   // Red border outline
+  strokeOpacity: 0.8,       // Opacity of the border
+  strokeWeight: 2,          // Thickness of the border
+  fillColor: "#FF0000",     // Fill color (same or different)
+  fillOpacity: 0.1,         // Low opacity to make it see-through
+  map: mapElement,
+  center: { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE },
+  radius: 5000,             // Radius size in METERS (e.g., 5km)
+});
+
+
+
+
   }
   //display eartquake info
   async function getHighestEarthquake(latitude, longitude, maxRadiusKm = 100)    {
