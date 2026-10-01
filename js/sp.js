@@ -123,6 +123,7 @@ if (currentFile === "m.html")  {
     
     if (data.features && data.features.length > 0) {
       const highestQuake = data.features[0].properties;
+      console.table(highestQuake);
       return {
         magnitude: highestQuake.mag,
         place: highestQuake.place,
