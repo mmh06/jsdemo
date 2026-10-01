@@ -174,7 +174,7 @@ const redCircle = new google.maps.Circle({
   // Example usage: Searching a 500km radius around Los Angeles (34.05, -118.24)
   async function addMarkerToMap(lati,lang)    {
     // 1. Select the gmp-map element by ID
-     mapElement = document.getElementById('dmap');
+     me = document.getElementById('dmap');
     // 2. Load the marker library
     const    {
       AdvancedMarkerElement
@@ -190,7 +190,7 @@ const redCircle = new google.maps.Circle({
     }
     );
     // 4. Append the marker to the <gmp-map> element
-    mapElement.append(marker);
+    me.append(marker);
     
     
   }
