@@ -63,6 +63,7 @@ if (currentFile === "startupplan.html")     {
   }
 }
 if (currentFile === "m.html")     {
+  let mapElement;
   console.log("This code only runs on m.html");
   // 1. Check if the Geolocation API is supported by the browser
   if ("geolocation" in navigator)     {
@@ -74,7 +75,7 @@ if (currentFile === "m.html")     {
       const longitude = parseFloat(position.coords.longitude.toFixed(4)) ;
       console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
       // 1. Select the <gmp-map> element by its ID
-      const mapElement = document.getElementById('dmap');
+       mapElement = document.getElementById('dmap');
       // 2. Wait for the custom element to be defined, then access its innerMap property
       const innerMap = mapElement.innerMap;
       // 3. Set the new coordinates using setCenter() or setOptions()
@@ -146,7 +147,7 @@ if (currentFile === "m.html")     {
   // Example usage: Searching a 500km radius around Los Angeles (34.05, -118.24)
   async function addMarkerToMap(lati,lang)    {
     // 1. Select the gmp-map element by ID
-    const mapElement = document.getElementById('dmap');
+     mapElement = document.getElementById('dmap');
     // 2. Load the marker library
     const    {
       AdvancedMarkerElement
