@@ -107,11 +107,11 @@ if (currentFile === "m.html")     {
     console.error("Geolocation is not supported by this browser.");
   }
   async function redCirc(lati,long,radius){
-    /* 1. Initialize the map centered on your coordinate
+    // 1. Initialize the map centered on your coordinate
 mapElement = new google.maps.Map(document.getElementById('dmap'), {
     center: { lat: 38.7946, lng:106.5348 },
     zoom: 4,
-  });*/
+  });
 
 // 2. Add the red border circle
 let rad = radius*1000;
