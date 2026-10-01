@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps API Example</title>
+    <style>
+        /* Ensure the map has a defined width and height */
+        #map {
+            height: 500px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My First Google Map</h1>
+    <!-- The map component container -->
+    <gmp-map id="map" center="51.5074,-0.1278" zoom="12" map-id="DEMO_MAP_ID"></gmp-map>
+
+    <script>
+        // Initialize and add the map features asynchronously
+        async function initMap() {
+            // Request the necessary modern map and marker libraries
+            const [{ AdvancedMarkerElement }] = await Promise.all([
+                google.maps.importLibrary("marker"),
+                google.maps.importLibrary("maps")
+            ]);
+
+            // Target the map element from the DOM
+            const mapElement = document.getElementById("map");
+            const innerMap = mapElement.innerMap;
+
+            // Place an Advanced Marker at the center coordinates (London)
+            const marker = new AdvancedMarkerElement({
+                map: innerMap,
+                position: { lat: 51.5074, lng: -0.1278 },
+                title: "London, UK"
+            });
+        }
+
+        // Trigger map initialization once the script loads
+        window.initMap = initMap;
+    </script>
+
+    <!-- 
+      Load the Google Maps API. 
+      Replace 'YOUR_API_KEY' with your actual credentials from Google Cloud Console.
+    -->
+    <script src="https://googleapis.com" async defer></script>
+
+</body>
+</html>
