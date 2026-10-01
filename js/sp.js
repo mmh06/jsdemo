@@ -206,11 +206,5 @@ const redCircle = new google.maps.Circle({
     
     
   }
-  const mapElement = document.querySelector("gmp-map");
-
-// 2. Access the underlying Google Map instance directly
-const currentMap = mapElement.innerMap;
-
-// Now you can manipulate it (e.g., getting the center)
-console.log(currentMap.getCenter().toJSON());
+  
 }
