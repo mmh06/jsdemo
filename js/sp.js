@@ -184,6 +184,12 @@ if (currentFile === "m.html") {
     const pinText = document.createElement('div');
     pinText.textContent = td;
     pinText.className = 'mlabelclass';
+    const customPin = new google.maps.marker.PinElement({
+      background: '#FBBC04',  // Changes pin background color
+      borderColor: '#137333', // Changes border color
+      glyphText: td,         // Places text inside the pin (replaces default dot)
+      scale: 1.2,             // Resizes the pin
+    });
     const marker = new AdvancedMarkerElement({
       position: {
         lat: lati, lng: lang
