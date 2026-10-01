@@ -156,8 +156,10 @@ if (currentFile === "m.html") {
         lang = highestQuake[0];
         console.table(data.features[0]);
         place = data.features[0].properties.place;
-        place = place+ "&#128728;";
-         place = place+ "of magnitude"+data.features[0].properties.mag;
+        const eqemo = String.fromCodePoint('&#128728');
+        
+        place = place + eqemo;
+        place = place + "of magnitude" + data.features[0].properties.mag;
 
         addMarkerToMap(lati, lang, place);
         return {
