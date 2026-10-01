@@ -84,7 +84,7 @@ if (currentFile === "m.html")  {
       }
       );
       innerMap.setZoom(10);
-    getHighestEarthquake(latitude,longitude, 2000).then(result => console.log(result));
+    getHighestEarthquake(latitude,longitude, 5000).then(result => console.log(result));
         
     }
     ,
