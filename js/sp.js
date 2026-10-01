@@ -164,16 +164,7 @@ if (currentFile === "m.html")     {
     );
     // 4. Append the marker to the <gmp-map> element
     mapElement.append(marker);
-    const cityCircle = new google.maps.Circle({
-  strokeColor: "#FF0000",   // Hex color of the border
-  strokeOpacity: 0.8,       // Opacity of the border (0.0 to 1.0)
-  strokeWeight: 2,          // Thickness of the border in pixels
-  fillColor: "#FF0000",     // Hex color of the interior shape
-  fillOpacity: 0.35,        // Opacity of the interior fill
-  map: mapElement,                 // The map instance to draw on
-  center: { lat: 19.0822, lng: 72.8812 }, // Exact middle of the circle
-  radius: 50000,            // Radius size in METERS (10 km)
-});
+    
     
   }
 }
