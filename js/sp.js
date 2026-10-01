@@ -154,7 +154,7 @@ if (currentFile === "m.html") {
         const highestQuake = data.features[0].geometry.coordinates;
         lati = highestQuake[1];
         lang = highestQuake[0];
-        console.table(highestQuake);
+        console.table(data.features[0]);
         place = data.features[0].place;
         place = place+ "Nearest strongest eartquake";
         addMarkerToMap(lati, lang, place);
