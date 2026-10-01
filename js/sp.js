@@ -86,7 +86,7 @@ if (currentFile === "m.html")     {
       );
       innerMap.setZoom(4);
       addMarkerToMap(latitude,longitude);
-      redCirc(latitude,longitude,500);
+      //redCirc(latitude,longitude,500);
       getHighestEarthquake(latitude,longitude, 500).then(result => console.log(result));
       innerMap.addListener('click', (event) =>    {
         // 4. Extract the latitude and longitude from the event
