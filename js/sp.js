@@ -124,8 +124,8 @@ if (currentFile === "m.html")  {
     
     if (data.features && data.features.length > 0) {
       const highestQuake = data.features[0].geometry.coordinates;
-      lati = highestQuake[0];
-      lang =  highestQuake[1];
+      lati = highestQuake[1];
+      lang =  highestQuake[0];
       console.table(highestQuake);
        addMarkerToMap(lati,lang)
       return {
