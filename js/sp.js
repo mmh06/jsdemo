@@ -1,13 +1,11 @@
-/*  function initMap(){
-  var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -34.397, lng: 150.644},
-      zoom: 8
-    });
-}
 
-google.maps.event.addDomListener(window, 'load', initMap);
-*/
+// Get the current HTML file name
+const currentFile = window.location.pathname.split("/").pop();
 
+// Only execute code if the user is on "startupplan.html"
+if (currentFile === "startupplan.html") {
+    console.log("This code only runs on startupplan.html");
+ 
 const mediaQuery = window.matchMedia('(min-width: 350px)');
 function displayMessage(e)  {
   //shows different dialogue for different device types
@@ -66,4 +64,5 @@ function messageDesktop() {
   mb.style.color= "black";
   mb.style.padding= "5px";
   mb.textContent = "Feel the power of desktop";
+}
 }
