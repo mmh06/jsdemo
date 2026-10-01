@@ -88,7 +88,7 @@ const innerMap = mapElement.innerMap;
 
 // 3. Set the new coordinates using setCenter() or setOptions()
 innerMap.setCenter({ lat: latitude, lng: longitude }); 
-
+innerMap.setZoom(12);
         
     },
     (error) => {
