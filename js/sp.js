@@ -156,7 +156,7 @@ if (currentFile === "m.html") {
         lang = highestQuake[0];
         console.table(data.features[0]);
         place = data.features[0].properties.place;
-        const eqemo = String.fromCodePoint('&#128728');
+        const eqemo = String.fromCodePoint(0x1F44B);
         
         place = place + eqemo;
         place = place + "of magnitude" + data.features[0].properties.mag;
@@ -170,7 +170,8 @@ if (currentFile === "m.html") {
         }
           ;
       } else {
-        return "No earthquakes recorded in this radius.";
+        alert("No strong quakes recorded in this 500km radius");
+        return "No strong quakes recorded in this 500km radius.";
       }
     } catch (error) {
       console.error("Failed to fetch earthquake data:", error);
