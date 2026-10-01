@@ -70,9 +70,9 @@ if (currentFile === "m.html")  {
     navigator.geolocation.getCurrentPosition(
     (position) =>  {
       // Success callback: extraction of coordinates
-      const latitude = position.coords.latitude.toFixed(4);
+      const latitude = parseFloat(position.coords.latitude.toFixed(4));
       
-      const longitude = position.coords.longitude.toFixed(4); ;
+      const longitude = parseFloat(position.coords.longitude.toFixed(4)) ;
       console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
       // 1. Select the <gmp-map> element by its ID
       const mapElement = document.getElementById('dmap');
