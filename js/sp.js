@@ -114,6 +114,7 @@ mapElement = new google.maps.Map(document.getElementById('dmap'), {
   });
 
 // 2. Add the red border circle
+let rad = radius*1000;
 const redCircle = new google.maps.Circle({
   strokeColor: "#FF0000",   // Red border outline
   strokeOpacity: 0.8,       // Opacity of the border
@@ -121,8 +122,8 @@ const redCircle = new google.maps.Circle({
   fillColor: "#FF0000",     // Fill color (same or different)
   fillOpacity: 0.1,         // Low opacity to make it see-through
   map: mapElement,
-  center: { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE },
-  radius: 5000,             // Radius size in METERS (e.g., 5km)
+  center: { lat: lati, lng: long },
+  radius: rad,             // Radius size in METERS (e.g., 5km)
 });
 
 
