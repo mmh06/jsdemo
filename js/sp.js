@@ -85,7 +85,7 @@ if (currentFile === "m.html") {
         }
         );
         innerMap.setZoom(4);
-        addMarkerToMap(latitude, longitude,"Your lcocation");
+        addMarkerToMap(latitude, longitude, "Your lcocation");
         //redCirc(latitude,longitude,500);
         getHighestEarthquake(latitude, longitude, 500).then(result => console.log(result));
         innerMap.addListener('click', (event) => {
@@ -155,7 +155,7 @@ if (currentFile === "m.html") {
         lati = highestQuake[1];
         lang = highestQuake[0];
         console.table(highestQuake);
-        addMarkerToMap(lati, lang,"Nearest strongest eartquake");
+        addMarkerToMap(lati, lang, "Nearest strongest eartquake");
         return {
           magnitude: highestQuake.mag,
           place: highestQuake.place,
@@ -172,7 +172,7 @@ if (currentFile === "m.html") {
     }
   }
   // Example usage: Searching a 500km radius around Los Angeles (34.05, -118.24)
-  async function addMarkerToMap(lati, lang,td) {
+  async function addMarkerToMap(lati, lang, td) {
     // 1. Select the gmp-map element by ID
     me = document.getElementById('dmap');
     // 2. Load the marker library
@@ -181,18 +181,16 @@ if (currentFile === "m.html") {
     }
       = await google.maps.importLibrary("marker");
     // 3. Create the advanced marker instance
+    const pinText = document.createElement('div');
+    pinText.textContent = td;
+    pinText.className = 'mlabelclass';
     const marker = new AdvancedMarkerElement({
       position: {
         lat: lati, lng: lang
       }
       ,
       title: "My Marker Location",
-      label: {
-        text: td,
-        color: "#000000",
-        fontWeight: "bold",
-        fontSize: "14px"
-      }
+      content: pinText
     }
     );
     /* 4. Append the marker to the <gmp-map> element
