@@ -122,7 +122,7 @@ if (currentFile === "m.html")  {
     const data = await response.json();
     
     if (data.features && data.features.length > 0) {
-      const highestQuake = data.coordinates;
+      const highestQuake = data.features[0].geometry.coordinates;
       console.table(highestQuake);
       return {
         magnitude: highestQuake.mag,
