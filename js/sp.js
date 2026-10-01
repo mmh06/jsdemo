@@ -66,3 +66,5 @@ function messageDesktop() {
   mb.textContent = "Feel the power of desktop";
 }
 }
+if (currentFile === "m.html") {
+    console.log("This code only runs on m.html");}
