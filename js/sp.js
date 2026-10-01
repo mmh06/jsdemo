@@ -80,7 +80,15 @@ if ("geolocation" in navigator) {
         
       
       console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-        updateMapCenter(latitude,longitude);
+       // 1. Select the <gmp-map> element by its ID
+const mapElement = document.getElementById('dmap');
+
+// 2. Wait for the custom element to be defined, then access its innerMap property
+const innerMap = mapElement.innerMap;
+
+// 3. Set the new coordinates using setCenter() or setOptions()
+innerMap.setCenter({ lat: latitude, lng: longitude }); 
+
         
     },
     (error) => {
@@ -92,19 +100,7 @@ if ("geolocation" in navigator) {
 } else {
   console.error("Geolocation is not supported by this browser.");
 }
-async function updateMapCenter(lati,long) {
-  // Import the maps library
-  await google.maps.importLibrary("maps");
 
-  // Select the gmp-map element by id
-  const mapElement = document.getElementById("my-map");
-
-  // Access the inner map object
-  const innerMap = mapElement.innerMap;
-
-  // Set the new coordinates
-  innerMap.setCenter({ lat: lati, lng: long });
-}
 
 
 
