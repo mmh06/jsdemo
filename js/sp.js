@@ -77,8 +77,11 @@ if ("geolocation" in navigator) {
       // Success callback: extraction of coordinates
       const latitude = position.coords.latitude;
       const longitude = position.coords.longitude;
+        
       
       console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+        updateMapCenter(latitude,longitude);
+        
     },
     (error) => {
       // Error callback: handling issues (e.g., user denied permission)
@@ -89,6 +92,21 @@ if ("geolocation" in navigator) {
 } else {
   console.error("Geolocation is not supported by this browser.");
 }
+async function updateMapCenter(lati,long) {
+  // Import the maps library
+  await google.maps.importLibrary("maps");
+
+  // Select the gmp-map element by id
+  const mapElement = document.getElementById("my-map");
+
+  // Access the inner map object
+  const innerMap = mapElement.innerMap;
+
+  // Set the new coordinates
+  innerMap.setCenter({ lat: lati, lng: long });
+}
+
+
 
 
 
