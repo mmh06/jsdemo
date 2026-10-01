@@ -156,7 +156,7 @@ if (currentFile === "m.html") {
         lang = highestQuake[0];
         console.table(data.features[0]);
         place = data.features[0].properties.place;
-        const eqemo = String.fromCodePoint(0x1F44B);
+        const eqemo = String.fromCodePoint(1FA28);
         
         place = place + eqemo;
         place = place + "of magnitude" + data.features[0].properties.mag;
