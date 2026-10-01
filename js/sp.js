@@ -67,4 +67,29 @@ function messageDesktop() {
 }
 }
 if (currentFile === "m.html") {
-    console.log("This code only runs on m.html");}
+    console.log("This code only runs on m.html");
+// 1. Check if the Geolocation API is supported by the browser
+if ("geolocation" in navigator) {
+  
+  // 2. Request the current position
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      // Success callback: extraction of coordinates
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+      
+      console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+    },
+    (error) => {
+      // Error callback: handling issues (e.g., user denied permission)
+      console.error("Error retrieving location:", error.message);
+    }
+  );
+  
+} else {
+  console.error("Geolocation is not supported by this browser.");
+}
+
+
+
+}
