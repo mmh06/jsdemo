@@ -34,7 +34,8 @@ html, body {
   width:100%;
   margin:0 auto;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  flex-direction: column;
   color:white;
   background-color: black;
 }
