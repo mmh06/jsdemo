@@ -18,7 +18,7 @@ html, body {
 #map  {
   height: 100%;
 }
-*/
+
 #m {
   margin-top: 0;
   width: 100%;
@@ -39,6 +39,7 @@ html, body {
   color:white;
   background-color: black;
 }
+*/
 
 /* Optional: Makes the sample page fill the window. */ html, body  {
   height: 100%;
