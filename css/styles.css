@@ -13,6 +13,8 @@
   margin:0 auto 
   display: flex;
   justify-content: center; 
+  color:white;
+  background-color: black;
 }
 
 /* Optional: Makes the sample page fill the window. */ html, body  {
