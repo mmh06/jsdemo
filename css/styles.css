@@ -49,10 +49,10 @@ html, body  {
     padding: 0;
     box-sizing: border-box; /* Prevents padding from breaking layout width */
 }
-html {
+html ,body {
   height: 100%;
   width: 100%;
-  border: 1px solid red;
+  border: 3px solid white;
   overflow-x: hidden;
 }
 
