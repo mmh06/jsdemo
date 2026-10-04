@@ -1,6 +1,10 @@
 #map  {
   height: 100%;
 }
+#m {
+  min-height: 100%;
+  width: 100%;
+}
 #features-description {
   width:100%;
   margin:0 auto 
