@@ -51,12 +51,14 @@ html, body  {
 html {
   height: 100%;
   width: 100%;
+  border: 1px solid red;
 }
 
 #m {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  border: 1px solid red;
 }   
 #splan {
 					margin: 1%;
