@@ -26,6 +26,8 @@ html, body {
   display: flex;
   justify-content: center; 
   flex-direction: column;
+  height: 100vh;
+  width:  109vh;
 }
 
 #features-description {
