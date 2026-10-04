@@ -37,7 +37,7 @@ html, body {
 }
 */
 
-/* Optional: Makes the sample page fill the window. 
+/* 
 html, body  {
   height: 100%;
   margin: 0;
@@ -47,7 +47,7 @@ html, body  {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Prevents padding from breaking layout width */
+    box-sizing: border-box; 
 }
 html ,body {
   height: 100%;
