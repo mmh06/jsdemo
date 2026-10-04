@@ -48,6 +48,15 @@ html, body  {
   padding: 0;
 }
 */
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}   
 #splan {
 					margin: 1%;
 					height: 100px;
