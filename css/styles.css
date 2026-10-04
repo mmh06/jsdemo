@@ -15,10 +15,6 @@ html, body {
 }
 
 
-#map  {
-  height: 100%;
-}
-
 #m {
   margin-top: 0;
   width: 100%;
@@ -48,6 +44,11 @@ html, body  {
   padding: 0;
 }
 */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Prevents padding from breaking layout width */
+}
 html {
   height: 100%;
   width: 100%;
