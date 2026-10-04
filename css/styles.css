@@ -1,6 +1,10 @@
 * element that contains the map. */ #map  {
   height: 100%;
 }
+#features-description {
+  display: flex;
+  justify-content: center; 
+}
 
 /* Optional: Makes the sample page fill the window. */ html, body  {
   height: 100%;
