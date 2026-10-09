@@ -226,7 +226,7 @@ else if (currentFile === "m.html") {
 
 }
 else if (currentFile === "cssdemo.html") {
-   console.log("js working");
+  console.log("js working");
 
   $(document).ready(function () {
     let currentIndex = 0;
