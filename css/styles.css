@@ -9,7 +9,7 @@
 
 .slider-wrapper {
   display: flex;
-  width: 100%; /* 100% * number of slides */
+  width: 100%;
   height: 100%;
   transition: transform 0.4s ease-in-out;
 }
@@ -36,48 +36,54 @@
   cursor: pointer;
 }
 
-#prevBtn { left: 5px; }
-#nextBtn { right: 5px; }
+#prevBtn {
+  left: 5px;
+}
+
+#nextBtn {
+  right: 5px;
+}
 
 
-*  {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html ,body  {
+html,
+body {
   height: 100%;
   width: 100%;
   border: 3px solid white;
   overflow-x: hidden;
 }
 
-#m  {
+#m {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
   border: 1px solid red;
 }
 
-#mapgui  {
+#mapgui {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
-#dmap  {
+#dmap {
   flex: 1;
   overflow-y: auto;
 }
 
-.des  {
+.des {
   border: 2px solid #333333;
   color: white;
-  background-color:black;
+  background-color: black;
 }
 
-#splan  {
+#splan {
   margin: 1%;
   height: 100px;
   width: 100%;
@@ -87,23 +93,23 @@ html ,body  {
   float: left;
 }
 
-#splan  {
+#splan {
   background-image: none;
 }
 
-@media screen and (min-width: 350px)  {
-  #splan  {
+@media screen and (min-width: 350px) {
+  #splan > :not(#main-nav) {
     font-family: 'Orbitron', sans-serif;
     color: purple;
     margin: 0;
     padding: 0;
-    float:none;
+    float: none;
     font-size: 24px;
     color: white;
     -webkit-text-stroke: 2px #ff4500;
   }
 
-  #splan  {
+  #splan {
     background-image: url("../images/dbutler.png");
     min-height: 100vh;
     background-position: center;
@@ -114,27 +120,30 @@ html ,body  {
 
 }
 
-@media screen and (min-width: 1025px)  {
-  #splan  {
+@media screen and (min-width: 1025px) {
+  #splan > :not(#main-nav) {
     font-family: 'Impact', 'Arial Black', system-ui;
     color: purple;
-    font-weight:1000;
+    font-weight: 1000;
     font-size: 2rem;
     text-shadow: 10px 10px 0 #ff005e, 20px 20px 0 #00d4ff;
-  animation: shadow-dance 9s infinite }
+    animation: shadow-dance 9s infinite
+  }
 
-  @keyframes shadow-dance  {
-    0%, 100%  {
+  @keyframes shadow-dance {
+
+    0%,
+    100% {
       text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
     }
 
-    50%  {
+    50% {
       text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
     }
 
   }
 
-  #splan  {
+  #splan {
     background-image: url("../images/dbutler.png");
     min-height: 100vh;
     background-position: center;
@@ -145,117 +154,122 @@ html ,body  {
 
 }
 
-body  {
+body {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6  {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-align: center;
 }
 
-h3  {
+h3 {
   border-top: 2px solid green;
   border-bottom: 2px solid green;
 }
 
-.titular  {
+.titular {
   font-weight: bold;
   font-style: italic;
   font-family: "Lucida Handwriting", "Courier New", monospace;
 }
 
-#footwrap  {
+#footwrap {
   text-align: center;
 }
 
-#top-nav  {
+#top-nav {
   text-align: center;
 }
 
-#top-nav ul.topUL  {
+#top-nav ul.topUL {
   display: inline-block;
   text-align: center;
 }
 
-#font-color-demo  {
+#font-color-demo {
   color: blue;
 }
 
-#background-color-demo  {
+#background-color-demo {
   background-color: red;
 }
 
-#font-demo  {
+#font-demo {
   font-family: "Brush Script MT", "Lucida Handwriting", cursive;
 }
 
-#text-align-demo  {
+#text-align-demo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.class-demo  {
+.class-demo {
   font-family: "Brush Script MT", "Lucida Handwriting", cursive;
   font-size: 200%;
   color: blue;
 }
 
-.resize-demo  {
+.resize-demo {
   font-size: 5vw;
 }
 
-.border-demo  {
+.border-demo {
   border-style: solid;
   border-color: red;
 }
 
-.box  {
+.box {
   width: 50%;
   margin-left: 25%;
 }
 
-.fixed-box  {
+.fixed-box {
   position: relative;
   width: 400px;
   height: 400px;
 }
 
-#main-nav  {
+#main-nav {
   float: left;
   width: 100%;
   background-color: #333;
 }
 
-#main-nav ul  {
+#main-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   float: left;
   position: relative;
-  left:50%;
+  left: 50%;
 }
 
-#main-nav ul li  {
+#main-nav ul li {
   float: left;
   position: relative;
   right: 50%;
 }
 
-#main-nav ul li a  {
+#main-nav ul li a {
   padding: 10px 25px;
   display: block;
   text-decoration: none;
   color: #ccc;
 }
 
-#main-nav ul li a:hover  {
+#main-nav ul li a:hover {
   background-color: #ccc;
   color: #333;
 }
 
-#landing-body  {
-  color:white;
+#landing-body {
+  color: white;
   background-image: url("../images/resume-image.png");
   min-height: 100vh;
   background-position: center;
@@ -264,7 +278,7 @@ h3  {
   background-attachment: fixed;
 }
 
-.grid-list  {
+.grid-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
@@ -272,134 +286,139 @@ h3  {
   padding: 0;
 }
 
-.flex-list  {
+.flex-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
 }
 
-.flex-list li  {
+.flex-list li {
   flex: 0 0 33.33%;
   box-sizing: border-box;
 }
 
-#top-nav  {
+#top-nav {
   text-align: center;
 }
 
-#top-nav ul.topUL  {
+#top-nav ul.topUL {
   display: inline-block;
   text-align: center;
 }
 
-#font-color-demo  {
+#font-color-demo {
   color: blue;
 }
 
-#background-color-demo  {
+#background-color-demo {
   background-color: red;
 }
 
-#font-demo  {
+#font-demo {
   font-family: "Brush Script MT", "Lucida Handwriting", cursive;
 }
 
-#text-align-demo  {
+#text-align-demo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.class-demo  {
+.class-demo {
   font-family: "Brush Script MT", "Lucida Handwriting", cursive;
   font-size: 200%;
   color: blue;
 }
 
-.resize-demo  {
+.resize-demo {
   font-size: 5vw;
 }
 
-.border-demo  {
+.border-demo {
   border-style: solid;
   border-color: red;
 }
 
-.box  {
+.box {
   width: 50%;
   margin-left: 25%;
 }
 
-.fixed-box  {
+.fixed-box {
   position: relative;
   width: 400px;
   height: 400px;
 }
 
-#main-nav  {
+#main-nav {
   float: left;
   width: 100%;
   background-color: #333;
 }
 
-#main-nav ul  {
+#main-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   float: left;
   position: relative;
-  left:50%;
+  left: 50%;
 }
 
-#main-nav ul li  {
+#main-nav ul li {
   float: left;
   position: relative;
   right: 50%;
 }
 
-#main-nav ul li a  {
+#main-nav ul li a {
   padding: 10px 25px;
   display: block;
   text-decoration: none;
   color: #ccc;
 }
 
-#main-nav ul li a:hover  {
+#main-nav ul li a:hover {
   background-color: #ccc;
   color: #333;
 }
 
-.responsive-bounded-img  {
+.responsive-bounded-img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-#splan li  {
-  margin:3px;
+#splan li {
+  margin: 3px;
   border: 3px solid;
-  border-image: repeating-linear-gradient( 45deg, #e3dcdc, #e3dcdc 03px, #120202 03px, #120202 06px ) 1;
+  border-image: repeating-linear-gradient(45deg, #e3dcdc, #e3dcdc 03px, #120202 03px, #120202 06px) 1;
 }
 
-h1, h2, h3, h4, h5, h6  {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-align: center;
 }
 
-#top-nav  {
+#top-nav {
   text-align: center;
 }
 
-#top-nav ul.topUL  {
+#top-nav ul.topUL {
   display: inline-block;
   text-align: center;
 }
 
-.image-container  {
+.image-container {
   display: flex;
   justify-content: center;
 }
 
-.circular-image  {
+.circular-image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
