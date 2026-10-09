@@ -83,7 +83,7 @@ body {
   background-color: black;
 }
 
-#splan> :not(#main-nav) {
+#splan {
   margin: 1%;
   height: 100px;
   width: 100%;
@@ -98,7 +98,7 @@ body {
 }
 
 @media screen and (min-width: 350px) {
-  #splan> :not(#main-nav) {
+  #splan > :not(#main-nav) {
     font-family: 'Orbitron', sans-serif;
     color: purple;
     margin: 0;
@@ -121,7 +121,7 @@ body {
 }
 
 @media screen and (min-width: 1025px) {
-  #splan> :not(#main-nav) {
+  #splan > :not(#main-nav) {
     font-family: 'Impact', 'Arial Black', system-ui;
     color: purple;
     font-weight: 1000;
@@ -389,7 +389,7 @@ h3 {
   display: block;
 }
 
-#splan li > :not(#main-nav) {
+#resource-list li {
   margin: 3px;
   border: 3px solid;
   border-image: repeating-linear-gradient(45deg, #e3dcdc, #e3dcdc 03px, #120202 03px, #120202 06px) 1;
