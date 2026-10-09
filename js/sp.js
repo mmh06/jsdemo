@@ -63,7 +63,7 @@ if (currentFile === "startupplan.html") {
     mb.textContent = "Feel the power of desktop";
   }
 }
-if (currentFile === "m.html") {
+else if (currentFile === "m.html") {
 
   console.log("This code only runs on m.html");
   // 1. Check if the Geolocation API is supported by the browser
@@ -157,7 +157,7 @@ if (currentFile === "m.html") {
         console.table(data.features[0]);
         place = data.features[0].properties.place;
         const eqemo = String.fromCodePoint(0x1F6D8);
-        
+
         place = place + eqemo;
         place = place + "of magnitude" + data.features[0].properties.mag;
 
@@ -225,8 +225,30 @@ if (currentFile === "m.html") {
   }
 
 }
-else if  (currentFile === "cssdemo.html"){
-  
+else if (currentFile === "cssdemo.html") {
+   console.log("js working");
+
+  $(document).ready(function () {
+    let currentIndex = 0;
+    const totalSlides = $('.slide').length;
+
+    function updateSlide() {
+      const offset = -currentIndex * 300; // Match box width
+      $('.slider-wrapper').css('transform', `translateX(${offset}px)`);
+    }
+
+    $('#nextBtn').click(function () {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlide();
+    });
+
+    $('#prevBtn').click(function () {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    });
+  });
+
+
 
 
 }
