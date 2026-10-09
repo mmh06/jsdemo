@@ -389,7 +389,7 @@ h3 {
   display: block;
 }
 
-#splan li {
+#splan li > :not(#main-nav){
   margin: 3px;
   border: 3px solid;
   border-image: repeating-linear-gradient(45deg, #e3dcdc, #e3dcdc 03px, #120202 03px, #120202 06px) 1;
