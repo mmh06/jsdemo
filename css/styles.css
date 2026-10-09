@@ -83,7 +83,7 @@ body {
   background-color: black;
 }
 
-#splan {
+#splan > :not(#main-nav) {
   margin: 1%;
   height: 100px;
   width: 100%;
